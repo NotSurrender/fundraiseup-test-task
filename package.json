@@ -1,6 +1,9 @@
 {
   "name": "fundraiseup-test-task",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "concurrently \"cd packages/client && npm run build && npm run dev\" \"cd packages/static && npm run dev\" \"cd packages/tracker && npm run dev\""
   },
