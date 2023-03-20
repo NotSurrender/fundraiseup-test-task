@@ -1,0 +1,10 @@
+{
+  "name": "fundraiseup-test-task",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd packages/client && npm run build && npm run dev\" \"cd packages/static && npm run dev\" \"cd packages/tracker && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
